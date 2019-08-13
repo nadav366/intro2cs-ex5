@@ -1,0 +1,40 @@
+nadav366
+205457534
+Nadav Har-tuv
+I talked about the exercise with Guy Katz, Yair Shemer, and Itay Tayar.
+
+
+I built a program that accepts files that contain a letter matrix,
+a list of words and search directions, and prints to a file several
+times the words appear according to the search directions.
+
+The assignment to functions was based on the following understanding:
+I tried to see within the various search directions,
+actions that repeat several times.
+I found that the directions: up-down, right-left, diagonal from the top
+and bottom, and diagonal to the left from the top and bottom-
+are the same in the opposite direction.
+Besides, I found that the search in columns and rows are the same
+when replacing the rows with the columns.
+And the two diagonals is the same activity in reverse the order of rows.
+
+Therefore, I written one function that all search directions will lead to,
+that searches for all the words in a given list, using some auxiliary functions
+
+I wrote a function that scans by line (in the normal and inverse direction),
+and the function that transpose the matrix.
+That's how I handled all the straight lines.
+
+A function that is scanned by diagonals (in the normal and inverse direction),
+and a function that turns the rows of the matrix.
+That's how I treated all the diagonals.
+
+
+
+Explanation of the test file-
+I checked the word_in_line function
+
+I chose different types of inputs -
+A word that appears once, does not appear at all, appears several times,
+either individually or in combination (one or more letters shared).
+Also, different combinations of uppercase and lowercase letters.
